@@ -2,20 +2,17 @@ import Head from 'next/head';
 
 import type { NextPage } from 'next';
 
-import Home from '@/components/home';
-
-const HomePage: NextPage = () => {
+const AboutPage: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Akhil Naidu</title>
+        <title>About - Akhil Naidu</title>
         <meta name='description' content="Akhil Naidu's Personal Portfolio" />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <Home />
+      About
     </div>
   );
 };
 
-export default HomePage;
+export default AboutPage;

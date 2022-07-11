@@ -1,4 +1,13 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "cSpell.ignorePaths": [".vscode", "generated/*"],
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true

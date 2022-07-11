@@ -1,9 +1,8 @@
-import type { AppProps } from 'next/app';
+// rather than using this, we are using the _app.tsx
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
-
-import '../styles/globals.css';
 
 interface NavLink {
   id: number;
@@ -11,15 +10,20 @@ interface NavLink {
   url: string;
 }
 
-function MyApp({ Component, pageProps }: AppProps) {
+const Layout = ({ children }: any) => {
   const linkData: NavLink[] = [
     { id: 1, name: ' Home ', url: '/' },
     { id: 2, name: 'About', url: '/about' },
     { id: 3, name: 'Resume', url: '/resume' },
     { id: 4, name: 'Projects', url: '/projects' },
-    { id: 5, name: 'Blog', url: '/blog' },
+    { id: 5, name: 'Blogs', url: '/blogs' },
     { id: 6, name: 'Contact', url: '/contact' },
   ];
+
+  const router = useRouter();
+
+  console.log(router.pathname);
+
   return (
     <div className='container flex flex-col min-h-screen p-4 mx-auto'>
       <nav className='flex gap-8  justify-end'>
@@ -33,13 +37,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           ))}
         </RoughNotationGroup>
       </nav>
-      <main className='flex-grow'>
-        <Component {...pageProps} />
-      </main>
+
+      <main className='flex-grow'>{children}</main>
 
       <footer>This is footer</footer>
     </div>
   );
-}
+};
 
-export default MyApp;
+export default Layout;
