@@ -3099,6 +3099,7 @@ __metadata:
     prettier-plugin-tailwindcss: ^0.1.12
     react: 18.2.0
     react-dom: 18.2.0
+    react-rough-notation: ^1.0.2
     tailwindcss: ^3.1.5
     typescript: 4.7.4
   languageName: unknown
@@ -3289,6 +3290,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-rough-notation@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "react-rough-notation@npm:1.0.2"
+  dependencies:
+    rough-notation: ^0.4.0
+  peerDependencies:
+    react: ^17.0.0
+    react-dom: ^17.0.0
+  checksum: 9b387369b24f680d4a145d0b56ba51afb9c98cd5d61b5944ff11ed5a3da768e72eb63fb609ef1178cb8af0cfc5bed0910ab63e4d68203dcbfbffbc2b3c24f9f9
+  languageName: node
+  linkType: hard
+
 "react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
@@ -3433,6 +3446,13 @@ __metadata:
   bin:
     rimraf: bin.js
   checksum: 87f4164e396f0171b0a3386cc1877a817f572148ee13a7e113b238e48e8a9f2f31d009a92ec38a591ff1567d9662c6b67fd8818a2dbbaed74bc26a87a2a4a9a0
+  languageName: node
+  linkType: hard
+
+"rough-notation@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "rough-notation@npm:0.4.0"
+  checksum: 777fc589c64512f7170db21ccee09c9155e117309de5d63dcf4a9ed9bbbbf844408ce8f2ff6a0eaad6d1989a19177c85adda3e8130bb955701335b3f7f7e57b6
   languageName: node
   linkType: hard
 
