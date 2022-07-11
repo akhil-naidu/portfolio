@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
@@ -20,14 +21,22 @@ function MyApp({ Component, pageProps }: AppProps) {
     { id: 5, name: 'Blog', url: '/blog' },
     { id: 6, name: 'Contact', url: '/contact' },
   ];
+
+  const router = useRouter();
+  // className={`cursor-pointer p-2 rounded-sm ${router.pathname === url ? 'bg-red-200' : 'bg-green-200'}`}
   return (
     <div className='container flex flex-col min-h-screen p-4 mx-auto'>
       <nav className='flex gap-8  justify-end'>
         <RoughNotationGroup show={true}>
           {linkData.map(({ id, name, url }: NavLink) => (
-            <RoughNotation key={id} type='box' order={id}>
+            <RoughNotation
+              key={id}
+              type='box'
+              order={id}
+              color={router.pathname === url ? 'red' : 'black'}
+            >
               <Link href={url}>
-                <a className='bg-green-200 cursor-pointer p-1'>{name}</a>
+                <a>{name}</a>
               </Link>
             </RoughNotation>
           ))}
