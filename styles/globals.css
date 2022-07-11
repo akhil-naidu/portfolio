@@ -4,8 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+  font-family: 'Virgil';
+  src: url('../assets/fonts/Virgil.woff2') format('woff');
+}
+
 @layer base {
   html {
-    @apply font-poppins;
+    font-family: Virgil, system-ui, sans-serif;
   }
 }

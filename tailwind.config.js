@@ -7,8 +7,9 @@ module.exports = {
       center: true,
     },
     fontFamily: {
-      poppins: ['Poppins', 'sans-serif'],
-      robotoSlab: ['Roboto Slab', 'serif'],
+      virgil: ['Virgil'],
+      // poppins: ['Poppins', 'sans-serif'],
+      // robotoSlab: ['Roboto Slab', 'serif'],
     },
     fontSize: {
       xs: '.75rem', // 12px
