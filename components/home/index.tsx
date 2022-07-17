@@ -44,7 +44,7 @@ const Home = () => {
           rel='noopener noreferrer'
           className='bg-gray-100 p-2 rounded-full text-black hover:text-gray-100 hover:bg-black transition ease-in-out duration-300 hover:duration-500 hover:scale-110'
         >
-          <RoughNotation type='circle' show={true} color='red'>
+          <RoughNotation type='circle' show={true} color='#f87171'>
             <span className=''>
               <FaGithub />
             </span>

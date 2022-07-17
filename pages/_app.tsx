@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               key={id}
               type='box'
               order={id}
-              color={router.pathname === url ? 'red' : 'black'}
+              color={router.pathname === url ? '#f87171' : 'black'}
             >
               <Link href={url}>
                 <a>{name}</a>
