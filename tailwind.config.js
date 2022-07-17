@@ -28,5 +28,9 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    // require('prettier-plugin-tailwindcss'),
+  ],
 };

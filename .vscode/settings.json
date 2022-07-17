@@ -7,12 +7,11 @@
   },
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": true,
-  "cSpell.ignorePaths": [".vscode", "generated/*"],
+  "cSpell.ignorePaths": ["hasura/*", ".vscode/*", "generated/*"],
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "eslint.nodePath": ".yarn/sdks",
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true
 }

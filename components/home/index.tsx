@@ -1,5 +1,69 @@
+import Image from 'next/image';
+
+import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { RoughNotation } from 'react-rough-notation';
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div className='flex h-full flex-col items-center justify-center space-y-1'>
+      <Image
+        src='https://picsum.photos/id/1005/400'
+        alt=''
+        height='200px'
+        width='200px'
+        className='rounded-full'
+      />
+
+      <div className='font-extrabold text-7xl'>Akhil Naidu</div>
+      <div className=''>Fullstack Developer</div>
+      <div className='flex space-x-3'>
+        <a
+          href='https://www.facebook.com/kaparapu.akhilnaidu'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='bg-gray-100  text-[#1773EA] hover:text-gray-100 p-2 rounded-md hover:bg-[#1773EA] transition ease-in-out hover:duration-300'
+        >
+          <span className=''>
+            <FaFacebookF />
+          </span>
+        </a>
+        <a
+          href='https://twitter.com/_kanaidu'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='bg-gray-100 text-[#1C9CEA] hover:text-gray-100 p-2 rounded-md hover:bg-[#1C9CEA] transition ease-in-out hover:duration-300'
+        >
+          <span className=''>
+            <FaTwitter />
+          </span>
+        </a>
+
+        <a
+          href='https://github.com/akhil-naidu'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='bg-gray-100 p-2 rounded-md text-black hover:text-gray-100 hover:bg-black transition ease-in-out hover:duration-300'
+        >
+          <RoughNotation type='circle' show={true} color='red'>
+            <span className=''>
+              <FaGithub />
+            </span>
+          </RoughNotation>
+        </a>
+
+        <a
+          href='https://www.linkedin.com/kaparapu.akhilnaidu'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='bg-gray-100 p-2 rounded-md text-[#0072b1] hover:bg-[#0072b1] hover:text-gray-100 transition ease-in-out hover:duration-300'
+        >
+          <span className=''>
+            <FaLinkedinIn />
+          </span>
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default Home;

@@ -42,11 +42,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           ))}
         </RoughNotationGroup>
       </nav>
-      <main className='flex-grow'>
+
+      <main className='flex-grow h-96'>
         <Component {...pageProps} />
       </main>
 
-      <footer>This is footer</footer>
+      <footer className='text-center'>
+        I'm passionate about what I do <span className='text-red-400'>@Akhil-Naidu</span>
+      </footer>
     </div>
   );
 }
