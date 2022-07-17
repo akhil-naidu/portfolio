@@ -21,7 +21,7 @@ const Home = () => {
           href='https://www.facebook.com/kaparapu.akhilnaidu'
           target='_blank'
           rel='noopener noreferrer'
-          className='bg-gray-100  text-[#1773EA] hover:text-gray-100 p-2 rounded-md hover:bg-[#1773EA] transition ease-in-out hover:duration-300'
+          className='bg-gray-100  text-[#1773EA] hover:text-gray-100 p-2 rounded-full hover:bg-[#1773EA] transition ease-in-out duration-300 hover:duration-500 hover:scale-110'
         >
           <span className=''>
             <FaFacebookF />
@@ -31,7 +31,7 @@ const Home = () => {
           href='https://twitter.com/_kanaidu'
           target='_blank'
           rel='noopener noreferrer'
-          className='bg-gray-100 text-[#1C9CEA] hover:text-gray-100 p-2 rounded-md hover:bg-[#1C9CEA] transition ease-in-out hover:duration-300'
+          className='bg-gray-100 text-[#1C9CEA] hover:text-gray-100 p-2 rounded-full hover:bg-[#1C9CEA] transition ease-in-out duration-300 hover:duration-500 hover:scale-110'
         >
           <span className=''>
             <FaTwitter />
@@ -42,7 +42,7 @@ const Home = () => {
           href='https://github.com/akhil-naidu'
           target='_blank'
           rel='noopener noreferrer'
-          className='bg-gray-100 p-2 rounded-md text-black hover:text-gray-100 hover:bg-black transition ease-in-out hover:duration-300'
+          className='bg-gray-100 p-2 rounded-full text-black hover:text-gray-100 hover:bg-black transition ease-in-out duration-300 hover:duration-500 hover:scale-110'
         >
           <RoughNotation type='circle' show={true} color='red'>
             <span className=''>
@@ -55,7 +55,7 @@ const Home = () => {
           href='https://www.linkedin.com/kaparapu.akhilnaidu'
           target='_blank'
           rel='noopener noreferrer'
-          className='bg-gray-100 p-2 rounded-md text-[#0072b1] hover:bg-[#0072b1] hover:text-gray-100 transition ease-in-out hover:duration-300'
+          className='bg-gray-100 p-2 rounded-full text-[#0072b1] hover:bg-[#0072b1] hover:text-gray-100 transition ease-in-out duration-300 hover:duration-500 hover:scale-110'
         >
           <span className=''>
             <FaLinkedinIn />
