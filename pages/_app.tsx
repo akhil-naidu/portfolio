@@ -48,7 +48,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       </main>
 
       <footer className='text-center'>
-        I'm passionate about what I do <span className='text-red-400'>@Akhil-Naidu</span>
+        {`I'm passionate about what I do`}
+        <span className='text-red-400'>@Akhil-Naidu</span>
       </footer>
     </div>
   );
