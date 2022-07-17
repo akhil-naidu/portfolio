@@ -9,13 +9,13 @@ const Home = () => {
       <Image
         src='https://picsum.photos/id/1005/400'
         alt=''
-        height='200px'
-        width='200px'
+        height='250px'
+        width='250px'
         className='rounded-full'
       />
 
       <div className='font-extrabold text-7xl'>Akhil Naidu</div>
-      <div className=''>Fullstack Developer</div>
+      <div className='text-gray-500'>Fullstack Developer</div>
       <div className='flex space-x-3'>
         <a
           href='https://www.facebook.com/kaparapu.akhilnaidu'
