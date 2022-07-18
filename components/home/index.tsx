@@ -7,15 +7,17 @@ const Home = () => {
   return (
     <div className='flex h-full flex-col items-center justify-center space-y-1'>
       <Image
-        src='https://picsum.photos/id/1005/400'
+        src='https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/206701335/original/a6226ece6cbed984a10f126d5311a93cebc29c99/make-your-own-character-anime-type.jpg'
         alt=''
         height='250px'
         width='250px'
         className='rounded-full'
       />
 
-      <div className='font-extrabold text-7xl'>Akhil Naidu</div>
-      <div className='text-gray-500'>Fullstack Developer</div>
+      <div className='font-extrabold text-7xl text-gray-300'>Akhil Naidu</div>
+      <div className='text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500'>
+        Fullstack Developer
+      </div>
       <div className='flex space-x-3'>
         <a
           href='https://www.facebook.com/kaparapu.akhilnaidu'
@@ -52,7 +54,7 @@ const Home = () => {
         </a>
 
         <a
-          href='https://www.linkedin.com/kaparapu.akhilnaidu'
+          href='https://www.linkedin.com/in/kaparapuakhilnaidu/'
           target='_blank'
           rel='noopener noreferrer'
           className='bg-gray-100 p-2 rounded-full text-[#0072b1] hover:bg-[#0072b1] hover:text-gray-100 transition ease-in-out duration-300 hover:duration-500 hover:scale-110'
