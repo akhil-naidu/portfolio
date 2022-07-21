@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import type { NextPage } from 'next';
 
-const ResumePage: NextPage = () => {
+const Work: NextPage = () => {
   return (
     <div>
       <Head>
@@ -10,9 +10,9 @@ const ResumePage: NextPage = () => {
         <meta name='description' content="Akhil Naidu's Personal Portfolio" />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      ResumePage
+      Work
     </div>
   );
 };
 
-export default ResumePage;
+export default Work;

@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const linkData: NavLink[] = [
     { id: 1, page: ' Home ', url: '/', color: 'text-sky-300' },
     { id: 2, page: 'About', url: '/about', color: 'text-indigo-300' },
-    { id: 3, page: 'Resume', url: '/resume', color: 'text-cyan-300' },
+    { id: 3, page: 'Work', url: '/work', color: 'text-cyan-300' },
     { id: 4, page: 'Projects', url: '/projects', color: 'text-purple-300' },
     { id: 5, page: 'Blog', url: '/blog', color: 'text-rose-300' },
     { id: 6, page: 'Contact', url: '/contact', color: 'text-teal-300' },
